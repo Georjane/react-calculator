@@ -1,9 +1,14 @@
-import './App.css';
+import '../App.css';
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
 
-function App() {
+const App = function () {
   return (
-    <div className="App" />
+    <>
+      <Display />
+      <ButtonPanel />
+    </>
   );
-}
+};
 
 export default App;
