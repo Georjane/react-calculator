@@ -1,18 +1,17 @@
 import PropTypes from 'prop-types';
 
-const Display = function (props) {
-  const { result } = props;
+export default function Display({ result }) {
   return (
-    { result }
+    <div className="display">
+      <h2>{ result }</h2>
+    </div>
   );
-};
+}
 
-Display.PropTypes = {
-  result: PropTypes.string.isRequired,
+Display.propTypes = {
+  result: PropTypes.string,
 };
 
 Display.defaultProps = {
   result: '0',
 };
-
-export default Display;

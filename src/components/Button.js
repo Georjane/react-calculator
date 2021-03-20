@@ -1,14 +1,10 @@
+/* eslint-disable react/prop-types */
 import PropTypes from 'prop-types';
 
-const Button = function (props) {
-  const { buttonName } = props;
-  return (
-    { buttonName }
-  );
-};
+export default function Button({ buttonName }) {
+  return <button type="button">{ buttonName }</button>;
+}
 
-Button.PropTypes = {
-  buttonName: PropTypes.string,
+Button.propTypes = {
+  buttonName: PropTypes.string.isRequired,
 };
-
-export default Button;
