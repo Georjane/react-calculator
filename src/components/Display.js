@@ -1,17 +1,14 @@
 import PropTypes from 'prop-types';
 
 const Display = function (props) {
+  const { result } = props;
   return (
-    <div className="Display">
-      Display Component has result property:
-      $
-      {props.result}
-    </div>
+    { result }
   );
 };
 
 Display.PropTypes = {
-  result: PropTypes.string,
+  result: PropTypes.string.isRequired,
 };
 
 Display.defaultProps = {

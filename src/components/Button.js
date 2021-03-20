@@ -1,7 +1,14 @@
+import PropTypes from 'prop-types';
+
 const Button = function (props) {
+  const { buttonName } = props;
   return (
-    <div className="Button">Button Component</div>
+    { buttonName }
   );
+};
+
+Button.PropTypes = {
+  buttonName: PropTypes.string,
 };
 
 export default Button;
