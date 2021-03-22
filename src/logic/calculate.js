@@ -1,7 +1,8 @@
 import operate from './operate';
 
 const calculate = (dataObject, buttonName) => {
-  const { total, next, operation } = dataObject;
+  let { total, next, operation } = dataObject;
+  const operands = ['+', '-', 'x', '÷', '%'];
   const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
   if (buttonName === '+/-') {
     total *= (-1);
