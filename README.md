@@ -7,7 +7,7 @@ The project has being broken down into the following milestones;
 - Milestone 1: Basic project structure 
 - Milestone 2: Components
 - Milestone 4: Calculations 
-- sMilestone 5: Event handlers 
+- Milestone 5: Event handlers 
 
 ## React Calculator Screenshot
 ![]()
