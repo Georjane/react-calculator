@@ -12,8 +12,8 @@ The project has being broken down into the following milestones;
 ## React Calculator Screenshot
 ![]()
 
-## Live Link on Heroku
-- [React Calculator](https://jane-react-calculator.herokuapp.com/)
+## Live Link
+- [React Calculator](https://eloquent-swartz-e7e1d1.netlify.app)
 
 ## Tools used
 - Node.js
