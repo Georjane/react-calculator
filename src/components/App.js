@@ -1,9 +1,9 @@
 import '../App.css';
+import { Component } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 // eslint-disable-next-line no-unused-vars
 import calculate from '../logic/calculate';
-import { Component } from 'react';
 
 export default class App extends Component {
   constructor(props) {
@@ -22,15 +22,16 @@ export default class App extends Component {
       total, next, operation, totalstatus,
     } = this.state;
     const result = calculate({
-      total, next, operation, totalstatus
+      total, next, operation, totalstatus,
     }, buttonName);
     this.setState({
       total: result.total,
       next: result.next,
       operation: result.operation,
-      totalstatus: result.totalstatus
-    })
+      totalstatus: result.totalstatus,
+    });
   }
+
   render() {
     const { total, next } = this.state;
     return (

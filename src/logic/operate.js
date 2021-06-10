@@ -8,7 +8,7 @@ const operate = (numberOne, numberTwo, operation) => {
     result = num1.minus(num2);
   } else if (operation === '+') {
     result = num1.plus(num2);
-  } else if (operation === 'X') {
+  } else if (operation === 'x') {
     result = num1.times(num2);
   } else if (operation === '÷') {
     if (numberTwo === 0) {

@@ -9,13 +9,13 @@ export default function ButtonPanel({ clickHandler }) {
         <Button buttonName="AC" clickHandler={() => clickHandler('AC')} />
         <Button buttonName="+/-" clickHandler={() => clickHandler('+/-')} />
         <Button buttonName="%" clickHandler={() => clickHandler('%')} />
-        <Button buttonName="÷" clickHandler={() => clickHandler('')} />
+        <Button buttonName="÷" clickHandler={() => clickHandler('÷')} />
       </div>
       <div>
         <Button buttonName="7" clickHandler={() => clickHandler('7')} />
         <Button buttonName="8" clickHandler={() => clickHandler('8')} />
         <Button buttonName="9" clickHandler={() => clickHandler('9')} />
-        <Button buttonName="X" clickHandler={() => clickHandler('x')} />
+        <Button buttonName="x" clickHandler={() => clickHandler('x')} />
       </div>
       <div>
         <Button buttonName="4" clickHandler={() => clickHandler('4')} />
