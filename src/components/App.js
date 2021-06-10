@@ -1,8 +1,7 @@
+import React, { Component } from 'react';
 import '../App.css';
-import { Component } from 'react';
-import Display from './Display';
 import ButtonPanel from './ButtonPanel';
-// eslint-disable-next-line no-unused-vars
+import Display from './Display';
 import calculate from '../logic/calculate';
 
 export default class App extends Component {
@@ -12,23 +11,23 @@ export default class App extends Component {
       total: null,
       next: null,
       operation: null,
-      totalstatus: true,
+      totalStatus: true,
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick = buttonName => {
     const {
-      total, next, operation, totalstatus,
+      total, next, operation, totalStatus,
     } = this.state;
     const result = calculate({
-      total, next, operation, totalstatus,
+      total, next, operation, totalStatus,
     }, buttonName);
     this.setState({
       total: result.total,
       next: result.next,
       operation: result.operation,
-      totalstatus: result.totalstatus,
+      totalStatus: result.totalStatus,
     });
   }
 

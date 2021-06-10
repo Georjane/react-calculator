@@ -1,17 +1,17 @@
-import React from 'react';
 /* eslint-disable react/prop-types */
+import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Button({ buttonName, clickHandler }) {
-  return <button type="button" onClick={clickHandler}>{ buttonName }</button>;
+export default function Button({ name, clickHandler }) {
+  return <button type="button" onClick={clickHandler}>{ name }</button>;
 }
 
 Button.propTypes = {
-  buttonName: PropTypes.string,
+  name: PropTypes.string,
   clickHandler: PropTypes.func,
 };
 
 Button.defaultProps = {
-  buttonName: '',
+  name: '',
   clickHandler: () => '',
 };
