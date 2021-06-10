@@ -34,7 +34,7 @@ To get a local copy of the repository please run the following commands on your 
 $ git clone https://github.com/Georjane/react-calculator.git
 $ cd react-calculator
 $ npm start
-$ Open localhost:3000 in your browser
+$ Open localhost:3000 in your browser if it doesn't open automatically
 ```
 
 ## Author
