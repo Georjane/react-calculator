@@ -12,12 +12,32 @@ export default class App extends Component {
       total: null,
       next: null,
       operation: null,
-    }
+      totalstatus: true,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick = buttonName => {
+    const {
+      total, next, operation, totalstatus,
+    } = this.state;
+    const result = calculate({
+      total, next, operation, totalstatus
+    }, buttonName);
+    this.setState({
+      total: result.total,
+      next: result.next,
+      operation: result.operation,
+      totalstatus: result.totalstatus
+    })
   }
   render() {
-    <>
-      <Display />
-      <ButtonPanel />
-    </>
+    const { total, next } = this.state;
+    return (
+      <>
+        <Display result={total} next={next} />
+        <ButtonPanel clickHandler={this.handleClick} />
+      </>
+    );
   }
 }
