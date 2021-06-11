@@ -8,13 +8,13 @@ const operate = (numberOne, numberTwo, operation) => {
     result = num1.minus(num2);
   } else if (operation === '+') {
     result = num1.plus(num2);
-  } else if (operation === 'X') {
+  } else if (operation === 'x') {
     result = num1.times(num2);
   } else if (operation === '÷') {
-    if (numberTwo === 0) {
-      result = 'Zero divide Error';
-    } else {
+    if (numberTwo !== '0') {
       result = num1.div(num2);
+    } else {
+      return 'Division by zero Error';
     }
   } else if (operation === '%') {
     result = num1.div(100);

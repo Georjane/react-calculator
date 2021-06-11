@@ -7,13 +7,13 @@ The project has being broken down into the following milestones;
 - Milestone 1: Basic project structure 
 - Milestone 2: Components
 - Milestone 4: Calculations 
-- sMilestone 5: Event handlers 
+- Milestone 5: Event handlers 
 
 ## React Calculator Screenshot
 ![]()
 
-## Live Link on Heroku
-- [React Calculator](https://jane-react-calculator.herokuapp.com/)
+## Live Link
+- [React Calculator](https://pensive-perlman-93cf78.netlify.app)
 
 ## Tools used
 - Node.js
@@ -34,7 +34,7 @@ To get a local copy of the repository please run the following commands on your 
 $ git clone https://github.com/Georjane/react-calculator.git
 $ cd react-calculator
 $ npm start
-$ Open localhost:3000 in your browser
+$ Open localhost:3000 in your browser if it doesn't open automatically
 ```
 
 ## Author
