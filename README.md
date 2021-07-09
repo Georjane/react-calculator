@@ -13,7 +13,7 @@ The project has being broken down into the following milestones;
 ![]()
 
 ## Live Link
-- [React Calculator](https://pensive-perlman-93cf78.netlify.app)
+- [React Calculator](https://jane-react-calculator.herokuapp.com/)
 
 ## Tools used
 - Node.js
