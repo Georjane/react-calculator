@@ -1,0 +1,9 @@
+.quote {
+  background-color: rgba(231, 228, 216, 0.082);
+  height: 80vh;
+  padding: 15px;
+}
+
+h2 {
+  font-weight: lighter;
+}

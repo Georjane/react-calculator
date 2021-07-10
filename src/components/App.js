@@ -20,9 +20,12 @@ const App = () => {
   };
   // });
   return (
-    <div className="App">
-      <Display result={total} next={next} />
-      <ButtonPanel clickHandler={handleClick} />
+    <div className="calculator">
+      <h2 style={{ color: 'blue' }}><i>Lets do some Maths!</i></h2>
+      <div className="App">
+        <Display result={total} next={next} />
+        <ButtonPanel clickHandler={handleClick} />
+      </div>
     </div>
   );
 };

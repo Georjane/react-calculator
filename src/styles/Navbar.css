@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  background-color: cornsilk;
+}
+
+.navbar div {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+}
