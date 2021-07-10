@@ -1,0 +1,13 @@
+.btnPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btnPanel__row {
+  height: 100px;
+}
+
+/* .last__row button:first-child{
+  width: 350px;
+} */
