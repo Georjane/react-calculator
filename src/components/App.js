@@ -20,10 +20,10 @@ const App = () => {
   };
   // });
   return (
-    <>
+    <div className="App">
       <Display result={total} next={next} />
       <ButtonPanel clickHandler={handleClick} />
-    </>
+    </div>
   );
 };
 
