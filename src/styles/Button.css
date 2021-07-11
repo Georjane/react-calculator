@@ -1,0 +1,12 @@
+.buttons,
+.orange {
+  /* width: 175px; */
+  height: inherit;
+  color: black;
+  border: 1px rgb(182, 179, 179) solid;
+  font-size: 24px;
+}
+
+.orange {
+  background-color: #ec903c;
+}
