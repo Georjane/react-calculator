@@ -16,4 +16,8 @@ describe('<App />', () => {
     expect(links).toBe(3);
   });
 
+  it('contains 19 buttons links', () => {
+    const wrapper = shallow(<ButtonPanel clickHandler={jest.fn()} />).find(Button).length;
+    expect(wrapper).toBe(19);
+  });
 });
