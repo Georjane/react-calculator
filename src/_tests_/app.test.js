@@ -9,3 +9,11 @@ import operate from '../logic/operate';
 import calculate from '../logic/calculate';
 
 Enzyme.configure({ adapter: new Adapter() });
+
+describe('<App />', () => {
+  it('contains 3 nav links', () => {
+    const links = shallow(<Navbar />).find('Link').length;
+    expect(links).toBe(3);
+  });
+
+});
