@@ -10,7 +10,7 @@ The project has being broken down into the following milestones;
 - Milestone 5: Event handlers 
 
 ## React Calculator Screenshot
-![]()
+![Calculator](calculator.png)
 
 ## Live Link
 - [React Calculator](https://jane-react-calculator.herokuapp.com/)
