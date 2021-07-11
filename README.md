@@ -37,6 +37,11 @@ $ npm start
 $ Open localhost:3000 in your browser if it doesn't open automatically
 ```
 
+## Run Tests
+```
+$ npm test
+```
+
 ## Author
 
 ### 1. Witah Georjane
