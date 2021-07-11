@@ -1,7 +1,6 @@
 import React from 'react';
-import Enzyme from 'enzyme';
+import Enzyme, { shallow } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
-import { shallow, configure } from 'enzyme';
 import Button from '../components/Button';
 import ButtonPanel from '../components/ButtonPanel';
 import Navbar from '../components/Navbar';
