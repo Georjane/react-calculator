@@ -20,4 +20,9 @@ describe('<App />', () => {
     const wrapper = shallow(<ButtonPanel clickHandler={jest.fn()} />).find(Button).length;
     expect(wrapper).toBe(19);
   });
+  
+  it('returns the addition of two nums', () => {
+    const result = operate(4, 5, '+');
+    expect(result).toEqual('9');
+  });
 });
