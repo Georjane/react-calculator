@@ -20,9 +20,18 @@ describe('<App />', () => {
     const wrapper = shallow(<ButtonPanel clickHandler={jest.fn()} />).find(Button).length;
     expect(wrapper).toBe(19);
   });
-  
+
   it('returns the addition of two nums', () => {
     const result = operate(4, 5, '+');
     expect(result).toEqual('9');
+  });
+
+  it('calculates the product of two digits', () => {
+    const result = calculate({
+      total: '6', next: '5', operation: 'x',
+    }, '=');
+    expect(result).toEqual({
+      total: '30', next: null, operation: null,
+    });
   });
 });
