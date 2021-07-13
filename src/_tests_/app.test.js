@@ -33,4 +33,13 @@ describe('<App />', () => {
       total: '30', next: null, operation: null,
     });
   });
+  
+  it('does not calculate the wrong product of two digits', () => {
+    const result = calculate({
+      total: '10', next: '5', operation: 'x',
+    }, '=');
+    expect(result).not.toEqual({
+      total: '30', next: null, operation: null,
+    });
+  });
 });
