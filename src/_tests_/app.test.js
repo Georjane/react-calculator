@@ -33,7 +33,7 @@ describe('<App />', () => {
       total: '30', next: null, operation: null,
     });
   });
-  
+
   it('does not calculate the wrong product of two digits', () => {
     const result = calculate({
       total: '10', next: '5', operation: 'x',
@@ -43,7 +43,6 @@ describe('<App />', () => {
     });
   });
 
-    
   it('does not calculate the wrong difference of two digits', () => {
     const result = calculate({
       total: '100', next: '50', operation: '-',
@@ -53,7 +52,6 @@ describe('<App />', () => {
     });
   });
 
-    
   it('calculates the dividend of two digits', () => {
     const result = calculate({
       total: '10', next: '5', operation: '÷',
