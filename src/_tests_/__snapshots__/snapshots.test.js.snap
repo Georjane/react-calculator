@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders button correctly 1`] = `
+<button
+  className="buttons"
+  onClick={[MockFunction]}
+  style={
+    Object {
+      "width": "175px",
+    }
+  }
+  type="button"
+>
+  AC
+</button>
+`;
+
+exports[`renders display correctly 1`] = `
+<div
+  className="display"
+>
+  <h2>
+    0
+  </h2>
+</div>
+`;
+
+exports[`renders home page 1`] = `
+<div
+  className="Home"
+>
+  <h2>
+    Welcome to our page!
+  </h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. cupidatat non proident, sunt in culpa qui o!cia deserunt mollit anim id est laborum. Ipsu Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor et dolore magna aliqua. Ut
+    <br />
+    <br />
+    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip is aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. cat cupidatat non proident, sunt in culpa qui o!cia deserunt mollit anim id est laborum. Ipsu
+  </p>
+</div>
+`;
+
+exports[`renders quotes page 1`] = `
+<div
+  className="quote"
+>
+  <h2>
+    <blockquote>
+      Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. –William Paul Thurston
+    </blockquote>
+  </h2>
+</div>
+`;
