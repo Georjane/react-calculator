@@ -42,4 +42,24 @@ describe('<App />', () => {
       total: '30', next: null, operation: null,
     });
   });
+
+    
+  it('does not calculate the wrong difference of two digits', () => {
+    const result = calculate({
+      total: '100', next: '50', operation: '-',
+    }, '=');
+    expect(result).not.toEqual({
+      total: '30', next: null, operation: null,
+    });
+  });
+
+    
+  it('calculates the dividend of two digits', () => {
+    const result = calculate({
+      total: '10', next: '5', operation: '÷',
+    }, '=');
+    expect(result).toEqual({
+      total: '2', next: null, operation: null,
+    });
+  });
 });
