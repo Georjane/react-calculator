@@ -10,10 +10,10 @@ The project has being broken down into the following milestones;
 - Milestone 5: Event handlers 
 
 ## React Calculator Screenshot
-![]()
+![Calculator](calculator.png)
 
 ## Live Link
-- [React Calculator](https://pensive-perlman-93cf78.netlify.app)
+- [React Calculator](https://jane-react-calculator.herokuapp.com/)
 
 ## Tools used
 - Node.js
@@ -35,6 +35,11 @@ $ git clone https://github.com/Georjane/react-calculator.git
 $ cd react-calculator
 $ npm start
 $ Open localhost:3000 in your browser if it doesn't open automatically
+```
+
+## Run Tests
+```
+$ npm test
 ```
 
 ## Author

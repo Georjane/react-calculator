@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders button correctly 1`] = `
+<button
+  className="buttons"
+  onClick={[MockFunction]}
+  style={
+    Object {
+      "width": "175px",
+    }
+  }
+  type="button"
+>
+  AC
+</button>
+`;
+
+exports[`renders display correctly 1`] = `
+<div
+  className="display"
+>
+  <h2>
+    0
+  </h2>
+</div>
+`;
