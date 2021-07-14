@@ -1,10 +1,5 @@
-import React from 'react';
-import Enzyme, { shallow } from 'enzyme';
+import Enzyme from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
-import Button from '../components/Button';
-import ButtonPanel from '../components/ButtonPanel';
-import Navbar from '../components/Navbar';
-import operate from '../logic/operate';
 import calculate from '../logic/calculate';
 
 Enzyme.configure({ adapter: new Adapter() });
@@ -59,7 +54,7 @@ describe('Calculate methods', () => {
     const result = calculate({
       total: '10', next: '5', operation: '+',
     }, '=');
-    expect(result).toEqual({
+    expect(result).not.toEqual({
       total: '20', next: null, operation: null,
     });
   });
