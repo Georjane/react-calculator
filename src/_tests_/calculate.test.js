@@ -58,5 +58,4 @@ describe('Calculate methods', () => {
       total: '20', next: null, operation: null,
     });
   });
-
 });

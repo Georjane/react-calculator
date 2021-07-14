@@ -5,7 +5,6 @@ import operate from '../logic/operate';
 Enzyme.configure({ adapter: new Adapter() });
 
 describe('<App />', () => {
-
   it('returns the sum of two nums', () => {
     const result = operate(4, 5, '+');
     expect(result).toEqual('9');
@@ -25,5 +24,4 @@ describe('<App />', () => {
     const result = operate(4, 5, 'x');
     expect(result).not.toEqual('15');
   });
-
 });

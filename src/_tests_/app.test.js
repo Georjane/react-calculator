@@ -17,5 +17,4 @@ describe('<App />', () => {
     const wrapper = shallow(<ButtonPanel clickHandler={jest.fn()} />).find(Button).length;
     expect(wrapper).toBe(19);
   });
-
 });
