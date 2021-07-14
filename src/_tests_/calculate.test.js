@@ -9,20 +9,14 @@ import calculate from '../logic/calculate';
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe('<App />', () => {
-  it('contains 3 nav links', () => {
-    const links = shallow(<Navbar />).find('Link').length;
-    expect(links).toBe(3);
-  });
-
-  it('contains 19 buttons links', () => {
-    const wrapper = shallow(<ButtonPanel clickHandler={jest.fn()} />).find(Button).length;
-    expect(wrapper).toBe(19);
-  });
-
-  it('returns the addition of two nums', () => {
-    const result = operate(4, 5, '+');
-    expect(result).toEqual('9');
+describe('Calculate methods', () => {
+  it('calculates the sum of two digits', () => {
+    const result = calculate({
+      total: '10', next: '10', operation: '+',
+    }, '=');
+    expect(result).toEqual({
+      total: '20', next: null, operation: null,
+    });
   });
 
   it('calculates the product of two digits', () => {
@@ -60,4 +54,14 @@ describe('<App />', () => {
       total: '2', next: null, operation: null,
     });
   });
+
+  it('does not calculate the wrong sum of two digits', () => {
+    const result = calculate({
+      total: '10', next: '5', operation: '+',
+    }, '=');
+    expect(result).toEqual({
+      total: '20', next: null, operation: null,
+    });
+  });
+
 });
